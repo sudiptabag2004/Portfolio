@@ -11,6 +11,17 @@ body{
     background:#010016;
     color: white;
 }
+.certi{
+    display: block;
+    margin:50px auto;
+    width: fit-content;
+    border: 1px solid rgb(0, 157, 255);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    
+}
 
 #header{
     width: 100%;
