@@ -11,6 +11,82 @@ body{
     background:#010016;
     color: white;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for the gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.gallery img {
+    max-width: 80%; /* Adjust the size as needed */
+    max-height: 80vh; /* Adjust the size as needed */
+    border: 2px solid #fff;
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+}
+
+/* Style for the arrow buttons */
+.arrow {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for the black button */
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.arrow {
+    font-size: 36px;
+    color: #00aaff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10%;
+    transition: background 0.3s ease;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+    left: 340px;
+}
+
+.arrow-right {
+    right: 340px;
+}
+
 .certi{
     display: block;
     margin:50px auto;
@@ -461,4 +537,12 @@ nav .fas{
         font-size: 14px;
     }   
 
+}
+.arrow {
+    font-size: 24px; /* Reduce arrow size for smaller screens */
+    padding: 5px; /* Reduce padding for smaller screens */
+}
+
+.arrow-container {
+    margin: 0 10px; /* Adjust the distance between arrows and image for smaller screens */
 }
