@@ -223,7 +223,7 @@ nav ul li a:hover::after{
 
 .worklist{
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Set to 3 columns */
+grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Set to 3 columns */
 grid-gap: 40px;
 margin-top: 50px;
 }
