@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ca78d19f7b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="LOGOOO.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+          <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      
+      <div class="header-text">
+        <div class="first"><p>Web Developer</p>
+        <h1>Hi, I'm <span>Sudipta</span> <br>From India</h1></div><br>
+        <p><div class="second"><img src="my2.png"></div></p>
+      </div>
+      </div>
+    
+
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="photo.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>Hello, I'm Sudipta Bag, a passionate web developer and designer.
+             Currently in my second year of studies, I am deeply enthusiastic
+              about crafting captivating online experiences. My journey in this 
+              ever-evolving digital realm is fueled by an insatiable appetite 
+              for learning, pushing the boundaries of creativity, and translating 
+              ideas into beautifully functional websites. Welcome to my portfolio,
+               where my commitment to innovation and dedication to design come to life.
+                Let's build something incredible together!</p>
+              <div class="tabtitle">
+                <p class="tablink active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tablink " onclick="opentab('Experience')">Experience</p>
+                <p class="tablink" onclick="opentab('Education')">Education</p>
+                <p class="tablink" onclick="opentab('Cerificates')">Certificates</p>
+              </div>
+              <div class="tabcontent activetab" id="Skills">
+                <ul>
+                  <li><span>HTML/CSS Proficiency</span><BR> I have skills of HTML and CSS, allowing me to effectively structure and style web content.</li>
+                    <li><span>JavaScript Knowledge</span><BR>I possess sufficient in JavaScript, which provides me with the capability to create dynamic and interactive web experiences.</li>
+                      <li><span>Responsive Web Design</span><BR> My skills in responsive web design ensure that websites I create seamlessly adapt to diverse devices and screen sizes.</li>  
+                        <li><span>UI/UX Design</span><BR>I excel in UI/UX design, enabling me to craft visually appealing and user-friendly interfaces that optimize the overall user experience.</li>  
+                </ul>
+              </div>
+              <div class="tabcontent" id="Experience">
+                <ul>
+                  <li><span>Website Development</span><BR>Made an interactive cricket fandom website with my friends</li>
+                    <li><span>Internship</span><BR>Completed a 3 months internship in Teachnook</li>
+                       
+                </ul>
+              </div>
+              <div class="tabcontent" id="Education">
+                <ul>
+                  <li><span>B.Tech.</span><BR>Currently in my 2nd year of B.Tech. at SRMIST KTR</li>
+                    <li><span>12th</span><BR>Completed my 10th from DPS,Panipat Refinery</li>
+                      <li><span>10th</span><BR>Completed my 10th from DPS,Paradip Refinery</li>  
+                </ul>
+              </div>
+              <div class="tabcontent" id="Certificates">
+                <ul>
+                  <li><span>B.Tech.</span><BR>Currently in mdfgdfgfdggbgy 2nd year of B.Tech. at SRMIST KTR</li>
+                    <li><span>12th</span><BR>Completed my 10th from DPS,Panipat Refinery</li>
+                      <li><span>10th</span><BR>Completed my 10th from DPS,Paradip Refinery</li>  
+                  
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------services------------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My services</h1>
+      <div class="serviceslist">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>"I excel in web development, crafting functional and visually 
+            appealing websites. With
+             expertise in programming languages and a focus on user experience,
+             I create online solutions that seamlessly merge form and function."</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-adn"></i>
+          <h2>UI/UX Design</h2>
+          <p>"I specialize in UI/UX design, creating immersive, user-focused
+             digital experiences. My approach prioritizes
+             intuitive interfaces, driven by a keen eye for detail and a commitment
+              to staying at the forefront of design trends."</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-nib"></i>
+          <h2>Graphic Design</h2>
+          <p>"I'm excited to introduce my cricket website, a one-stop destination
+             for all cricket enthusiasts. Here, you can dive into the world of cricket, 
+             explore information about your favorite players, stay updated with 
+             live scores, engage in real-time online chats with fellow fans, and even
+              participate in polls to voice your opinions on different players. It's a 
+              hub for cricket lovers to connect, discuss 
+            the game, and stay in the know about everything happening in the cricketing
+             world."</p>
+            <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------------------portfolio------------>
+
+
+  <div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My works</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="bat.jpg" >
+            <div class="layer">
+              <h3>Cricket Fandom Website</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisici
+                ng elit. Reprehenderit repudiandae debitis, ab sit 
+                t quibusdam! Laudantium vel aut magnam deserunt consequuntur
+                 excepturi, quae, corrupti quidem aliquam corporis accusantium.</p>
+                 <a href="https://cricketgallery.rf.gd/?i=1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="register3.png" >
+            <div class="layer">
+              <h3>Registration Site</h3>
+              <p>"I'm proud to say that I've created a user-friendly student
+                 enrollment webpage for our educational institution. This webpage
+                  simplifies the enrollment process, allowing students to complete
+                   and submit forms online with ease. The security measures in place 
+                   ensure the safety of personal information. Whether you're a new or
+                    returning student, my webpage offers a convenient and 
+                secure way to enroll in courses and embark on your educational journey."</p>
+                 <a href="https://sudiptabag2004.github.io/registration_1/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          
+        
+        </div>
+    <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+  </div>
+
+  <!---contact-->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactleft">
+          <h1 class="subtitle">Contact Me</h1><br>
+          <p><i class="fa-solid fa-paper-plane"></i>sudiptabag01012004@gmail.com</p><br>
+          <p><i class="fa-solid fa-phone"></i>90469*****</p><br><br>
+          <div class="socialicon">
+            <a href="https://www.linkedin.com/in/sudipta-bag/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/sudiptabag2004/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/sudiptabag2004"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="Sudipta Bag Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contactright">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Sudipta .Made with <i class="fa-regular fa-heart"></i> and passion.</p>
+    </div>
+  </div>
+
+
+  <script>
+    var tablink = document.getElementsByClassName("tablink")
+    var tabcontent = document.getElementsByClassName("tabcontent")
+
+    function opentab(tabname){
+      for(tablin of tablink){
+        tablin.classList.remove("active-link")
+      }
+      for(tabconten of tabcontent){
+        tabconten.classList.remove("activetab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("activetab");
+       
+    }
+  </script>
+
+  <script>
+    
+
+    var sidemeu = document.getElementById("sidemenu")
+
+    function openmenu(){
+      sidemeu.style.right="0";
+    }
+
+    function closemenu(){
+      sidemeu.style.right="-200px";
+    }
+
+
+  </script>
+  
+</body>
+</html>
