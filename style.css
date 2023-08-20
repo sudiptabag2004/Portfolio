@@ -11,6 +11,9 @@ body{
     background:#010016;
     color: white;
 }
+
+
+/* Style for the close button */
 .popup {
     display: none;
     position: fixed;
@@ -449,6 +452,9 @@ form .btn2{
 nav .fas{
     display: none;
 }
+
+
+
 
 @media only screen and (max-width:600px){
     nav .fas{
