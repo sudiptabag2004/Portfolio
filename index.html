@@ -172,8 +172,24 @@
           
         
         </div>
-    <a href="#" class="btn">See More</a>
+    
       </div>
+      <button class="button btn" onclick="openGallery()">My Art</button>
+    
+      <!-- The popup -->
+      <div id="imagePopup" class="popup">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="gallery">
+            <div class="arrow-container">
+                <span class="arrow arrow-left" onclick="prevImage()">&lt;</span>
+            </div>
+            <img id="galleryImage" src="" alt="Gallery Image" onclick="togglePause()">
+            <div class="arrow-container">
+                <span class="arrow arrow-right" onclick="nextImage()">&gt;</span>
+            </div>
+        </div>
+    </div>
+
     </div>
   </div>
 
@@ -241,6 +257,55 @@
 
 
   </script>
+  </script>
+ <script>
+  const images = [
+      'draw1.jpeg',
+      'draw2.jpeg',
+      'draw3.jpeg',
+      'draw4.jpeg',
+      'draw5.jpeg',
+      'draw2.jpeg',
+      
+      // Add more image URLs here
+  ];
+  let currentImageIndex = 0;
+  const imageElement = document.getElementById('galleryImage');
+
+  function openGallery() {
+      document.getElementById('imagePopup').style.display = 'block';
+      showImage(currentImageIndex);
+  }
+
+  function closeGallery() {
+      document.getElementById('imagePopup').style.display = 'none';
+  }
+
+  function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      showImage(currentImageIndex);
+  }
+
+  function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      showImage(currentImageIndex);
+  }
+
+  function showImage(index) {
+      // Set opacity to 0 before changing the image source
+      imageElement.style.opacity = 0;
+      
+      // Wait for a brief moment to allow the opacity transition to take effect
+      setTimeout(() => {
+          imageElement.src = images[index];
+          
+          // Set opacity back to 1 to reveal the new image
+          imageElement.style.opacity = 1;
+      }, 100);
+  }
+</script>
+
+
   
 </body>
 </html>
