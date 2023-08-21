@@ -52,12 +52,6 @@ body{
 }
 
 
-.arrow {
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-}
-
 
 button {
     background-color: black;
@@ -74,9 +68,9 @@ button {
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
+    padding: 5px;
     border-radius: 10%;
-    transition: background 0.3s ease;
+    
 }
 
 .arrow:hover {
@@ -84,11 +78,11 @@ button {
 }
 
 .arrow-left {
-    left: 340px;
+    left: 310px;
 }
 
 .arrow-right {
-    right: 340px;
+    right: 310px;
 }
 
 .certi{
@@ -552,3 +546,11 @@ nav .fas{
 
 .arrow-container {
     margin: 0 10px; 
+
+ .arrow-left {
+    left: 25px;
+}
+
+.arrow-right {
+    right: 25px;
+}   
